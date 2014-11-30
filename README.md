@@ -7,5 +7,5 @@ Deploy Clojure application on OpenShift.
 Create new application
 
 ```
-rhc app create myapp http://cartreflect-claytondev.rhcloud.com/github/openshift-cartridges/clojure-cartridge
+rhc app create myapp https://raw.githubusercontent.com/mateusz-/clojure-cartridge/master/metadata/manifest.yml 
 ```
