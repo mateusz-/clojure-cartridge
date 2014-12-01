@@ -8,7 +8,7 @@ export M2_REPO="${OPENSHIFT_CLOJURE_DIR}/maven"
 function start() {
   echo "Starting application"
   cd ${OPENSHIFT_REPO_DIR}
-  nohup ${OPENSHIFT_CLOJURE_DIR}/bin/lein trampoline run > ${OPENSHIFT_CLOJURE_DIR}/log/server.log 2>&1 &
+  nohup ${OPENSHIFT_CLOJURE_DIR}/bin/lein ring server-headless 8080 > ${OPENSHIFT_CLOJURE_DIR}/log/server.log 2>&1 &
   echo $! > ${OPENSHIFT_CLOJURE_DIR}/clojure.pid
   return 0
 }

@@ -2,6 +2,7 @@
 
 export LEIN_HOME="${OPENSHIFT_CLOJURE_DIR}/home"
 export M2_REPO="${OPENSHIFT_CLOJURE_DIR}/maven"
+export LEIN_JVM_OPTS="-Duser.home=${OPENSHIFT_CLOJURE_DIR}/app-root/data"
 
 mkdir -p $LEIN_HOME
 mkdir -p $M2_REPO
